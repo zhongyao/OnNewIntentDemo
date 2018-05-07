@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+/**
+ * @author hongri
+ */
 public class SecondActivity extends Activity {
     public static boolean flag = false;
 
