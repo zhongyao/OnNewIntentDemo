@@ -1,0 +1,348 @@
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+Display #0 (activities from top to bottom):
+  Stack #1:
+  mFullscreen=true
+  mBounds=null
+    Task id #2744
+    mFullscreen=true
+    mBounds=null
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{fd20ec0 #2744 A=com.hongri.intent U=0 StackId=1 sz=3}
+      userId=0 effectiveUid=u0a847 mCallingUid=u0a27 mUserSetupComplete=true mCallingPackage=com.lenovo.launcher
+      affinity=com.hongri.intent
+      intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.hongri.intent/.WelcomeActivity}
+      realActivity=com.hongri.intent/.WelcomeActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=3 taskType=0 mTaskToReturnTo=1
+      rootWasReset=true mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{e4a3532 u0 com.hongri.intent/.WelcomeActivity t2744}, ActivityRecord{8dfa0e1 u0 com.hongri.intent/.MainActivity t2744}, ActivityRecord{8b43492 u0 com.hongri.intent/.SecondActivity t2744}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=null lastThumbnailFile=/data/system_ce/0/recent_images/2744_task_thumbnail.png
+      stackId=1
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE isResizeable=true firstActiveTime=1525683062725 lastActiveTime=1525683062725 (inactive for 5s)
+      * Hist #2: ActivityRecord{8b43492 u0 com.hongri.intent/.SecondActivity t2744}
+          packageName=com.hongri.intent processName=com.hongri.intent
+          launchedFromUid=10847 launchedFromPackage=com.hongri.intent userId=0
+          app=ProcessRecord{56ef7f9 18994:com.hongri.intent/u0a847}
+          Intent { flg=0x10000000 cmp=com.hongri.intent/.SecondActivity (has extras) }
+          frontOfTask=false task=TaskRecord{fd20ec0 #2744 A=com.hongri.intent U=0 StackId=1 sz=3}
+          taskAffinity=com.hongri.intent
+          realActivity=com.hongri.intent/.SecondActivity
+          baseDir=/data/app/com.hongri.intent-1/base.apk
+          dataDir=/data/user/0/com.hongri.intent
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={640dpi} labelRes=0x7f0b001f icon=0x7f0a0001 theme=0x103000e
+          config={1.0 ?mcc?mnc [zh_CN] ldltr sw360dp w360dp h568dp 640dpi nrml port finger -keyb/v/h -nav/h s.57 ?spn ?gid THEMEUIFont(,)}
+          taskConfigOverride={1.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? ?spn ?gid THEMEUIFont(,)}
+          taskDescription: iconFilename=null label="null" color=ffe6e6e6
+          launchFailed=false launchCount=1 lastLaunchTime=-54s121ms
+          haveState=false icicle=null
+          state=RESUMED stopped=false delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=true sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_NOT_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=true lastVisibleTime=-53s683ms
+          resizeMode=RESIZE_MODE_RESIZEABLE
+      * Hist #1: ActivityRecord{8dfa0e1 u0 com.hongri.intent/.MainActivity t2744}
+          packageName=com.hongri.intent processName=com.hongri.intent
+          launchedFromUid=10847 launchedFromPackage=com.hongri.intent userId=0
+          app=ProcessRecord{56ef7f9 18994:com.hongri.intent/u0a847}
+          Intent { flg=0x10000000 cmp=com.hongri.intent/.MainActivity (has extras) }
+          frontOfTask=false task=TaskRecord{fd20ec0 #2744 A=com.hongri.intent U=0 StackId=1 sz=3}
+          taskAffinity=com.hongri.intent
+          realActivity=com.hongri.intent/.MainActivity
+          baseDir=/data/app/com.hongri.intent-1/base.apk
+          dataDir=/data/user/0/com.hongri.intent
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={640dpi} labelRes=0x7f0b001f icon=0x7f0a0001 theme=0x0
+          config={1.0 ?mcc?mnc [zh_CN] ldltr sw360dp w360dp h568dp 640dpi nrml port finger -keyb/v/h -nav/h s.57 ?spn ?gid THEMEUIFont(,)}
+          taskConfigOverride={1.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? ?spn ?gid THEMEUIFont(,)}
+          taskDescription: iconFilename=null label="null" color=ff212121
+          launchFailed=false launchCount=0 lastLaunchTime=-54s250ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=788]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_NOT_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-54s60ms
+          resizeMode=RESIZE_MODE_RESIZEABLE
+      * Hist #0: ActivityRecord{e4a3532 u0 com.hongri.intent/.WelcomeActivity t2744}
+          packageName=com.hongri.intent processName=com.hongri.intent
+          launchedFromUid=10027 launchedFromPackage=com.lenovo.launcher userId=0
+          app=ProcessRecord{56ef7f9 18994:com.hongri.intent/u0a847}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.hongri.intent/.WelcomeActivity bnds=[32,100][376,464] }
+          frontOfTask=true task=TaskRecord{fd20ec0 #2744 A=com.hongri.intent U=0 StackId=1 sz=3}
+          taskAffinity=com.hongri.intent
+          realActivity=com.hongri.intent/.WelcomeActivity
+          baseDir=/data/app/com.hongri.intent-1/base.apk
+          dataDir=/data/user/0/com.hongri.intent
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={640dpi} labelRes=0x7f0b001f icon=0x7f0a0001 theme=0x103000e
+          config={1.0 ?mcc?mnc [zh_CN] ldltr sw360dp w360dp h568dp 640dpi nrml port finger -keyb/v/h -nav/h s.57 ?spn ?gid THEMEUIFont(,)}
+          taskConfigOverride={1.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? ?spn ?gid THEMEUIFont(,)}
+          taskDescription: iconFilename=null label="null" color=ffe6e6e6
+          launchFailed=false launchCount=0 lastLaunchTime=-57s945ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=272]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-57s556ms
+          resizeMode=RESIZE_MODE_RESIZEABLE
+    Task id #2741
+    mFullscreen=true
+    mBounds=null
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{33919a8 #2741 A=com.youku.phone U=0 StackId=1 sz=3}
+      userId=0 effectiveUid=u0a800 mCallingUid=2000 mUserSetupComplete=true mCallingPackage=null
+      affinity=com.youku.phone
+      intent={flg=0x10000000 cmp=com.youku.phone/com.youku.share.sdk.test.TestShareInterfaceMainActivity}
+      realActivity=com.youku.phone/com.youku.share.sdk.test.TestShareInterfaceMainActivity
+      autoRemoveRecents=false isPersistable=true numFullscreen=2 taskType=0 mTaskToReturnTo=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{bfe8a96 u0 com.youku.phone/com.youku.share.sdk.test.TestShareInterfaceMainActivity t2741}, ActivityRecord{acfe271 u0 com.youku.phone/com.youku.share.activity.WeiboShareCallbackActivity t2741}, ActivityRecord{2b76ea9 u0 com.youku.phone/com.sina.weibo.sdk.share.WbShareTransActivity t2741}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=android.graphics.Bitmap@363a33e lastThumbnailFile=/data/system_ce/0/recent_images/2741_task_thumbnail.png
+      stackId=1
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_FORCE_RESIZEABLE isResizeable=true firstActiveTime=1525682936017 lastActiveTime=1525682936017 (inactive for 132s)
+      * Hist #2: ActivityRecord{2b76ea9 u0 com.youku.phone/com.sina.weibo.sdk.share.WbShareTransActivity t2741}
+          packageName=com.youku.phone processName=com.youku.phone
+          launchedFromUid=10800 launchedFromPackage=com.youku.phone userId=0
+          app=ProcessRecord{3748a3 17257:com.youku.phone/u0a800}
+          Intent { flg=0x10000000 cmp=com.youku.phone/com.sina.weibo.sdk.share.WbShareTransActivity (has extras) }
+          frontOfTask=false task=TaskRecord{33919a8 #2741 A=com.youku.phone U=0 StackId=1 sz=3}
+          taskAffinity=com.youku.phone
+          realActivity=com.youku.phone/com.sina.weibo.sdk.share.WbShareTransActivity
+          baseDir=/data/app/com.youku.phone-1/base.apk
+          dataDir=/data/user/0/com.youku.phone
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={640dpi} labelRes=0x7f0a0469 icon=0x7f030000 theme=0x1030011
+          config={1.0 ?mcc?mnc [zh_CN] ldltr sw360dp w360dp h568dp 640dpi nrml port finger -keyb/v/h -nav/h s.57 ?spn ?gid THEMEUIFont(,)}
+          taskConfigOverride={1.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? ?spn ?gid THEMEUIFont(,)}
+          taskDescription: iconFilename=null label="null" color=ff222222
+          results=[ResultInfo{who=null, request=765, result=0, data=null}]
+          launchFailed=false launchCount=0 lastLaunchTime=-3m31s950ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=848]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_NOT_SHOWN
+          fullscreen=false noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-3m31s151ms
+          resizeMode=RESIZE_MODE_FORCE_RESIZEABLE
+      * Hist #1: ActivityRecord{acfe271 u0 com.youku.phone/com.youku.share.activity.WeiboShareCallbackActivity t2741}
+          packageName=com.youku.phone processName=com.youku.phone
+          launchedFromUid=10800 launchedFromPackage=com.youku.phone userId=0
+          app=ProcessRecord{3748a3 17257:com.youku.phone/u0a800}
+          Intent { flg=0x10000000 cmp=com.youku.phone/com.youku.share.activity.WeiboShareCallbackActivity }
+          frontOfTask=false task=TaskRecord{33919a8 #2741 A=com.youku.phone U=0 StackId=1 sz=3}
+          taskAffinity=com.youku.phone
+          realActivity=com.youku.phone/com.youku.share.activity.WeiboShareCallbackActivity
+          baseDir=/data/app/com.youku.phone-1/base.apk
+          dataDir=/data/user/0/com.youku.phone
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={640dpi} labelRes=0x7f0a0469 icon=0x7f030000 theme=0x1030008
+          config={1.0 ?mcc?mnc [zh_CN] ldltr sw360dp w360dp h568dp 640dpi nrml port finger -keyb/v/h -nav/h s.57 ?spn ?gid THEMEUIFont(,)}
+          taskConfigOverride={1.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? ?spn ?gid THEMEUIFont(,)}
+          taskDescription: iconFilename=null label="null" color=ff222222
+          launchFailed=false launchCount=0 lastLaunchTime=-3m32s69ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=684]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_NOT_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-3m31s150ms
+          resizeMode=RESIZE_MODE_UNRESIZEABLE
+      * Hist #0: ActivityRecord{bfe8a96 u0 com.youku.phone/com.youku.share.sdk.test.TestShareInterfaceMainActivity t2741}
+          packageName=com.youku.phone processName=com.youku.phone
+          launchedFromUid=2000 launchedFromPackage=null userId=0
+          app=ProcessRecord{3748a3 17257:com.youku.phone/u0a800}
+          Intent { flg=0x10000000 cmp=com.youku.phone/com.youku.share.sdk.test.TestShareInterfaceMainActivity }
+          frontOfTask=true task=TaskRecord{33919a8 #2741 A=com.youku.phone U=0 StackId=1 sz=3}
+          taskAffinity=com.youku.phone
+          realActivity=com.youku.phone/com.youku.share.sdk.test.TestShareInterfaceMainActivity
+          baseDir=/data/app/com.youku.phone-1/base.apk
+          dataDir=/data/user/0/com.youku.phone
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={640dpi} labelRes=0x7f0a0469 icon=0x7f030000 theme=0x1030005
+          config={1.0 ?mcc?mnc [zh_CN] ldltr sw360dp w360dp h568dp 640dpi nrml port finger -keyb/v/h -nav/h s.57 ?spn ?gid THEMEUIFont(,)}
+          taskConfigOverride={1.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? ?spn ?gid THEMEUIFont(,)}
+          taskDescription: iconFilename=null label="null" color=ff222222
+          launchFailed=false launchCount=0 lastLaunchTime=-9m9s90ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=2884]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=0
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-3m42s612ms
+          resizeMode=RESIZE_MODE_FORCE_RESIZEABLE
+    Task id #2729
+    mFullscreen=true
+    mBounds=null
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{5114cc1 #2729 A=com.lenovo.powersetting U=0 StackId=1 sz=1}
+      userId=0 effectiveUid=u0a48 mCallingUid=1000 mUserSetupComplete=true mCallingPackage=com.android.settings
+      affinity=com.lenovo.powersetting
+      intent={flg=0x10808000 cmp=com.lenovo.powersetting/.PowerSettingActivity}
+      realActivity=com.lenovo.powersetting/.PowerSettingActivity
+      autoRemoveRecents=false isPersistable=false numFullscreen=1 taskType=0 mTaskToReturnTo=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{4584182 u0 com.lenovo.powersetting/.PowerSettingActivity t2729}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=null lastThumbnailFile=/data/system_ce/0/recent_images/2729_task_thumbnail.png
+      stackId=1
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE isResizeable=true firstActiveTime=1525681902220 lastActiveTime=1525681902220 (inactive for 1166s)
+      * Hist #0: ActivityRecord{4584182 u0 com.lenovo.powersetting/.PowerSettingActivity t2729}
+          packageName=com.lenovo.powersetting processName=com.lenovo.powersetting
+          launchedFromUid=1000 launchedFromPackage=com.android.settings userId=0
+          app=null
+          Intent { flg=0x10808000 cmp=com.lenovo.powersetting/.PowerSettingActivity (has extras) }
+          frontOfTask=true task=TaskRecord{5114cc1 #2729 A=com.lenovo.powersetting U=0 StackId=1 sz=1}
+          taskAffinity=com.lenovo.powersetting
+          realActivity=com.lenovo.powersetting/.PowerSettingActivity
+          baseDir=/system/priv-app/PowerManager/PowerManager.apk
+          dataDir=/data/user/0/com.lenovo.powersetting
+          stateNotNeeded=false componentSpecified=true mActivityType=0
+          compat={640dpi} labelRes=0x7f060025 icon=0x7f02003e theme=0x7f0b0026
+          config={1.0 ?mcc?mnc [zh_CN] ldltr sw360dp w360dp h568dp 640dpi nrml port finger -keyb/v/h -nav/h s.51 ?spn ?gid THEMEUIFont(,)}
+          taskConfigOverride={1.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? ?spn ?gid THEMEUIFont(,)}
+          taskDescription: iconFilename=null label="null" color=ff263238
+          launchFailed=false launchCount=0 lastLaunchTime=-41m24s484ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=2792]
+          state=DESTROYED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_NOT_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=APPLICATION_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-41m23s411ms
+          resizeMode=RESIZE_MODE_RESIZEABLE
+
+    Running activities (most recent first):
+      TaskRecord{fd20ec0 #2744 A=com.hongri.intent U=0 StackId=1 sz=3}
+        Run #5: ActivityRecord{8b43492 u0 com.hongri.intent/.SecondActivity t2744}
+        Run #4: ActivityRecord{8dfa0e1 u0 com.hongri.intent/.MainActivity t2744}
+        Run #3: ActivityRecord{e4a3532 u0 com.hongri.intent/.WelcomeActivity t2744}
+      TaskRecord{33919a8 #2741 A=com.youku.phone U=0 StackId=1 sz=3}
+        Run #2: ActivityRecord{2b76ea9 u0 com.youku.phone/com.sina.weibo.sdk.share.WbShareTransActivity t2741}
+        Run #1: ActivityRecord{acfe271 u0 com.youku.phone/com.youku.share.activity.WeiboShareCallbackActivity t2741}
+        Run #0: ActivityRecord{bfe8a96 u0 com.youku.phone/com.youku.share.sdk.test.TestShareInterfaceMainActivity t2741}
+
+    mResumedActivity: ActivityRecord{8b43492 u0 com.hongri.intent/.SecondActivity t2744}
+    mLastPausedActivity: ActivityRecord{1b992a8 u0 com.tencent.android.qqdownloader/com.tencent.pangu.link.LinkProxyActivity t2748 f}
+
+  Stack #0:
+  mFullscreen=true
+  mBounds=null
+    Task id #2513
+    mFullscreen=true
+    mBounds=null
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{1bded88 #2513 A=com.lenovo.launcher U=0 StackId=0 sz=1}
+      userId=0 effectiveUid=u0a27 mCallingUid=u0a45 mUserSetupComplete=true mCallingPackage=com.android.systemui
+      affinity=com.lenovo.launcher
+      intent={act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.lenovo.launcher/.Launcher}
+      realActivity=com.lenovo.launcher/.Launcher
+      autoRemoveRecents=false isPersistable=true numFullscreen=1 taskType=1 mTaskToReturnTo=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{fcf726c u0 com.lenovo.launcher/.Launcher t2513}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=null lastThumbnailFile=/data/system_ce/0/recent_images/2513_task_thumbnail.png
+      stackId=0
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE isResizeable=false firstActiveTime=1525683010203 lastActiveTime=1525683010203 (inactive for 58s)
+      * Hist #0: ActivityRecord{fcf726c u0 com.lenovo.launcher/.Launcher t2513}
+          packageName=com.lenovo.launcher processName=com.lenovo.launcher
+          launchedFromUid=0 launchedFromPackage=null userId=0
+          app=ProcessRecord{603838a 4829:com.lenovo.launcher/u0a27}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.lenovo.launcher/.Launcher }
+          frontOfTask=true task=TaskRecord{1bded88 #2513 A=com.lenovo.launcher U=0 StackId=0 sz=1}
+          taskAffinity=com.lenovo.launcher
+          realActivity=com.lenovo.launcher/.Launcher
+          baseDir=/system/priv-app/LenovoLauncher/LenovoLauncher.apk
+          dataDir=/data/user/0/com.lenovo.launcher
+          stateNotNeeded=true componentSpecified=false mActivityType=1
+          compat={640dpi} labelRes=0x7f080072 icon=0x7f020180 theme=0x7f0c000a
+          config={1.0 ?mcc?mnc [zh_CN] ldltr sw360dp w360dp h568dp 640dpi nrml port finger -keyb/v/h -nav/h s.5 ?spn ?gid THEMEUIFont(,)}
+          taskConfigOverride={1.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? ?spn ?gid THEMEUIFont(,)}
+          taskDescription: iconFilename=null label="null" color=ff212121
+          launchFailed=false launchCount=0 lastLaunchTime=-1d0h41m56s6ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=7324]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=2
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=HOME_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-58s643ms
+          resizeMode=RESIZE_MODE_RESIZEABLE
+
+    Task id #2533
+    mFullscreen=true
+    mBounds=null
+    mMinWidth=-1
+    mMinHeight=-1
+    mLastNonFullscreenBounds=null
+    * TaskRecord{b6dc321 #2533 A=com.android.systemui U=0 StackId=0 sz=1}
+      userId=0 effectiveUid=u0a45 mCallingUid=u0a45 mUserSetupComplete=true mCallingPackage=com.android.systemui
+      affinity=com.android.systemui
+      intent={flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[64,2048][1376,3680]}
+      realActivity=com.android.systemui/.recents.RecentsActivity
+      autoRemoveRecents=false isPersistable=false numFullscreen=1 taskType=2 mTaskToReturnTo=1
+      rootWasReset=false mNeverRelinquishIdentity=true mReuseTask=false mLockTaskAuth=LOCK_TASK_AUTH_PINNABLE
+      Activities=[ActivityRecord{ddaf37f u0 com.android.systemui/.recents.RecentsActivity t2533}]
+      askedCompatMode=false inRecents=true isAvailable=true
+      lastThumbnail=null lastThumbnailFile=/data/system_ce/0/recent_images/2533_task_thumbnail.png
+      stackId=0
+      hasBeenVisible=true mResizeMode=RESIZE_MODE_RESIZEABLE isResizeable=true firstActiveTime=1525683009359 lastActiveTime=1525683009359 (inactive for 58s)
+      * Hist #0: ActivityRecord{ddaf37f u0 com.android.systemui/.recents.RecentsActivity t2533}
+          packageName=com.android.systemui processName=com.android.systemui
+          launchedFromUid=10045 launchedFromPackage=com.android.systemui userId=0
+          app=ProcessRecord{dc4034 2362:com.android.systemui/u0a45}
+          Intent { flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[64,2048][1376,3680] }
+          frontOfTask=true task=TaskRecord{b6dc321 #2533 A=com.android.systemui U=0 StackId=0 sz=1}
+          taskAffinity=com.android.systemui
+          realActivity=com.android.systemui/.recents.RecentsActivity
+          baseDir=/system/priv-app/NotificationCenter/NotificationCenter.apk
+          dataDir=/data/user_de/0/com.android.systemui
+          stateNotNeeded=true componentSpecified=true mActivityType=2
+          compat={640dpi} labelRes=0x7f090054 icon=0x7f020174 theme=0x7f0f00fb
+          config={1.0 ?mcc?mnc [zh_CN] ldltr sw360dp w360dp h568dp 640dpi nrml port finger -keyb/v/h -nav/h s.5 ?spn ?gid THEMEUIFont(,)}
+          taskConfigOverride={1.0 ?mcc?mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? ?spn ?gid THEMEUIFont(,)}
+          taskDescription: iconFilename=null label="null" color=ff212121
+          launchFailed=false launchCount=0 lastLaunchTime=-1d0h33m5s727ms
+          haveState=true icicle=Bundle[mParcelledData.dataSize=1564]
+          state=STOPPED stopped=true delayedResume=false finishing=false
+          keysPaused=false inHistory=true visible=false sleeping=false idle=true mStartingWindowState=STARTING_WINDOW_NOT_SHOWN
+          fullscreen=true noDisplay=false immersive=false launchMode=3
+          frozenBeforeDestroy=false forceNewConfig=false
+          mActivityType=RECENTS_ACTIVITY_TYPE
+          waitingVisible=false nowVisible=false lastVisibleTime=-59s983ms
+          resizeMode=RESIZE_MODE_RESIZEABLE
+
+    Running activities (most recent first):
+      TaskRecord{1bded88 #2513 A=com.lenovo.launcher U=0 StackId=0 sz=1}
+        Run #1: ActivityRecord{fcf726c u0 com.lenovo.launcher/.Launcher t2513}
+      TaskRecord{b6dc321 #2533 A=com.android.systemui U=0 StackId=0 sz=1}
+        Run #0: ActivityRecord{ddaf37f u0 com.android.systemui/.recents.RecentsActivity t2533}
+
+    mLastPausedActivity: ActivityRecord{fcf726c u0 com.lenovo.launcher/.Launcher t2513}
+
+  mFocusedActivity: ActivityRecord{8b43492 u0 com.hongri.intent/.SecondActivity t2744}
+  mFocusedStack=ActivityStack{bb65346 stackId=1, 4 tasks} mLastFocusedStack=ActivityStack{bb65346 stackId=1, 4 tasks}
+  mSleepTimeout=false
+  mCurTaskIdForUser={0=2748}
+  mUserStackInFront={}
+  mActivityContainers={0=ActivtyContainer{0}A, 1=ActivtyContainer{1}A}
+  mLockTaskModeState=NONE mLockTaskPackages (userId:packages)=
+    0:[]
+ mLockTaskModeTasks[]
