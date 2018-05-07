@@ -7,6 +7,10 @@ import android.os.Handler;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+/**
+ * @author hongri
+ * 关于实例的分析可查阅README
+ */
 public class WelcomeActivity extends Activity {
 
     @Override
@@ -21,9 +25,9 @@ public class WelcomeActivity extends Activity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent intent = new Intent(WelcomeActivity.this, SecondActivity.class);
-                        intent.putExtra("times", System.currentTimeMillis() + "");
-                        startActivity(intent);
+                        //Intent intent = new Intent(WelcomeActivity.this, SecondActivity.class);
+                        //intent.putExtra("times", System.currentTimeMillis() + "");
+                        //startActivity(intent);
                     }
                 }, 100);
                 Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);

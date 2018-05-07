@@ -3,6 +3,8 @@ package com.hongri.intent;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 
 /**
  * @author hongri
@@ -19,30 +21,33 @@ public class MainActivity extends Activity {
         } else {
             Logger.d("MainActivity-->onCreate:savedInstanceState is:" + savedInstanceState.toString());
         }
-        //findViewById(R.id.btn).setOnClickListener(new OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-        //        SecondActivity.flag = false;
-        //        //Intent intent = new Intent(MainActivity.this, MainActivity.class);
-        //        new Handler().postDelayed(new Runnable() {
-        //            @Override
-        //            public void run() {
-        //
-        //            }
-        //        }, 100);
-        //        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        //        intent.putExtra("time", System.currentTimeMillis() + "");
-        //        startActivity(intent);
-        //
-        //        //startActivityForResult(intent, 100);
-        //    }
-        //});
+        findViewById(R.id.btn).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //SecondActivity.flag = false;
+                ////Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                //new Handler().postDelayed(new Runnable() {
+                //    @Override
+                //    public void run() {
+                //
+                //    }
+                //}, 100);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("time", System.currentTimeMillis() + "");
+                startActivity(intent);
+
+                //startActivityForResult(intent, 100);
+            }
+        });
     }
 
     /**
-     * 让后台的Activity回到前台，并为其传递一些数据是需要用到该方法
+     * 1、让后台的Activity回到前台，并为其传递一些数据是需要用到该方法
      * 获取新的intent数据时需要设置setIntent(intent)方法，
      * 否则gentIntent()会获取的老的数据信息
+     *
+     * 2、直接finish掉SecondActivity或按back物理键的时候不会调用该方法
+     * 重新StartActivity的时候才会调用该方法。
      *
      * @param intent
      */

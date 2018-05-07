@@ -19,16 +19,15 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:allowTaskReparenting="true"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
             android:taskAffinity="com.hongri.intent"
-            >
+            android:theme="@android:style/Theme.Light">
         </activity>
         <activity
             android:name=".SecondActivity"
             android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Dialog">
+            android:theme="@android:style/Theme.Light">
         </activity>
 
     </application>

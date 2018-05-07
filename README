@@ -1,2 +1,47 @@
 研究onNewIntent方法：
-1、当Activity
+1、当Activity是普通主题时，MainActivity跳转到SecondActivity，再按back键返回MainActivity的时候的生命周期:
+05-07 20:26:29.910 22319-22319/com.hongri.intent D/yao: MainActivity-->onCreate
+05-07 20:26:29.912 22319-22319/com.hongri.intent D/yao: MainActivity-->onStart
+05-07 20:26:29.918 22319-22319/com.hongri.intent D/yao: MainActivity-->onResume
+
+05-07 20:26:33.460 22319-22319/com.hongri.intent D/yao: MainActivity-->onPause
+05-07 20:26:33.488 22319-22319/com.hongri.intent D/yao: SecondActivity-------->onCreate
+05-07 20:26:33.489 22319-22319/com.hongri.intent D/yao: SecondActivity-------->onStart
+05-07 20:26:33.496 22319-22319/com.hongri.intent D/yao: SecondActivity-------->onResume
+05-07 20:26:33.952 22319-22319/com.hongri.intent D/yao: MainActivity-->onStop
+
+05-07 20:26:39.077 22319-22319/com.hongri.intent D/yao: SecondActivity-------->onPause
+05-07 20:26:39.084 22319-22319/com.hongri.intent D/yao: MainActivity-->onRestart
+05-07 20:26:39.084 22319-22319/com.hongri.intent D/yao: MainActivity-->onStart
+05-07 20:26:39.085 22319-22319/com.hongri.intent D/yao: MainActivity-->onResume
+05-07 20:26:39.415 22319-22319/com.hongri.intent D/yao: SecondActivity-------->onStop
+05-07 20:26:39.415 22319-22319/com.hongri.intent D/yao: SecondActivity-------->onDestroy
+
+
+2、当Activity是透明主题（Dialog主题时效果一样）的时候,MainActivity跳转到SecondActivity，再按back键返回MainActivity的时候的生命周期:
+
+05-07 19:51:34.810 18522-18522/com.hongri.intent D/yao: MainActivity-->onCreate
+05-07 19:51:34.811 18522-18522/com.hongri.intent D/yao: MainActivity-->onStart
+05-07 19:51:34.818 18522-18522/com.hongri.intent D/yao: MainActivity-->onResume
+
+05-07 19:51:41.434 18522-18522/com.hongri.intent D/yao: MainActivity-->onPause
+05-07 19:51:41.457 18522-18522/com.hongri.intent D/yao: SecondActivity-------->onCreate
+05-07 19:51:41.458 18522-18522/com.hongri.intent D/yao: SecondActivity-------->onStart
+05-07 19:51:41.464 18522-18522/com.hongri.intent D/yao: SecondActivity-------->onResume
+
+05-07 19:52:19.708 18522-18522/com.hongri.intent D/yao: SecondActivity-------->onPause
+05-07 19:52:19.725 18522-18522/com.hongri.intent D/yao: MainActivity-->onResume
+05-07 19:52:19.747 18522-18522/com.hongri.intent D/yao: SecondActivity-------->onStop
+05-07 19:52:19.747 18522-18522/com.hongri.intent D/yao: SecondActivity-------->onDestroy
+
+分析：
+首先是MainActivity从创建-->启动-->到用户可见。
+
+然后点击跳转-->此时由于SecondActivity是透明的，所以此时用户对MainActivity依然可见，所以没有执行onStop方法，
+此时SecondActivity创建，然后启动，最后到用户可见。
+
+按返回键（或直接finish掉）后SecondActivity先执行onPause方法，然后重新启动MainActivity，由于MainActivity之前没有执行onStop方法
+所以直接执行onResume方法恢复一些状态就可以了，然后正常销毁SecondActivity，分别执行onStop和onDestroy方法。
+
+
+
